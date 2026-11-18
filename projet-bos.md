@@ -1,13 +1,28 @@
 ---
 bos: project/v1
+id: "677d2387-25f9-434c-93c8-9ebb48b4c3a5"
 title: "bSideDesk"
-status: review
-budget:
-deadline:
-category: back_office
-service_type:
-client:
+status: "review"
+exported_at: 2026-11-18T12:58:05.545Z
 ---
+
+<!-- bos:instructions:start
+INSTRUCTIONS POUR L'IA (ce fichier sera réimporté dans bOS, ne casse pas son format)
+
+1. Le cahier des charges (texte libre) est en dehors du bloc de tâches : tu peux le compléter, y ajouter des fonctionnalités
+   et tenir un journal de session (ex. une section "## Journal de session" datée avec ce qui a été fait / décidé).
+2. Les tâches sont uniquement dans le bloc délimité par les commentaires bos:tasks:start et bos:tasks:end (ne les supprime pas), une tâche par ligne :
+     - [ ] Titre | type:feature | priority:medium | due:2026-12-31 | id:xxxxxxxx
+       Description optionnelle sur les lignes suivantes, indentées de 2 espaces.
+3. Le STATUT d'une tâche est donné par la section où elle se trouve (À faire / En cours / Review / Terminé).
+   Pour la faire avancer, déplace la ligne dans la bonne section. Cocher [x] la considère aussi comme terminée.
+   Les NOTES d'une tâche sont les lignes qui commencent par "> " (indentées de 2 espaces) sous la tâche : conserve-les, ajoute-en si utile.
+4. NOUVELLE tâche : ajoute une ligne SANS "id:" dans la section voulue.
+5. Ne modifie JAMAIS un "id:" existant. Ne supprime pas une ligne pour la terminer : déplace-la dans "Terminé".
+6. Valeurs autorisées : type = feature | bug | infra | documentation ; priority = low | medium | high | urgent ;
+   due = AAAA-MM-JJ (facultatif).
+7. Garde le front matter (--- en haut) ; tu peux y changer status (todo | in_progress | review | done | archived), deadline et budget.
+bos:instructions:end -->
 
 # bSideDesk
 
@@ -120,58 +135,60 @@ Réutiliser un iPad ancien comme extension du poste de travail, éviter l'achat 
 
 ### À faire
 
-- [ ] Mesurer latence et stabilité | type:feature | priority:medium
+- [ ] Mesurer latence et stabilité | type:feature | priority:medium | id:f6ab433c-f661-40df-b265-16ea63994570
   Définir un protocole de mesure Wi-Fi et USB et consigner les résultats.
-- [ ] Vérifier la signature Windows | type:infra | priority:high
+- [ ] Vérifier la signature Windows | type:infra | priority:high | id:9b7150d2-abd7-460b-81e1-bc50886da570
   Confirmer la configuration Azure Trusted Signing et tester le setup signé.
-- [ ] Étudier la webcam Media Foundation | type:feature | priority:low
+- [ ] Étudier la webcam Media Foundation | type:feature | priority:low | id:05560d0b-a445-4235-93b0-c44d46df2a3e
   Évaluer une intégration compatible avec les applications Windows concernées.
-- [ ] Étudier une distribution App Store | type:feature | priority:low
+- [ ] Étudier une distribution App Store | type:feature | priority:low | id:1d645880-0fd9-4d87-8c10-54c8f26cf487
   Chiffrer les prérequis matériels et la migration vers un iOS récent.
-- [ ] Étudier les intégrations Outlook et Teams | type:feature | priority:low
+- [ ] Étudier les intégrations Outlook et Teams | type:feature | priority:low | id:78b27a4e-2485-4011-9b81-f724a56a912e
   Évaluer la séparation des privilèges nécessaire à la lecture des données.
-- [ ] Préparer le guide de recette | type:documentation | priority:medium
+- [ ] Préparer le guide de recette | type:documentation | priority:medium | id:61b8d7c4-c43d-46c5-81d4-e613c85b2686
   Définir la matrice appareils, versions et scénarios de validation.
-- [ ] Importer la fiche dans bOS | type:documentation | priority:medium
+- [ ] Importer la fiche dans bOS | type:documentation | priority:medium | id:c8de3841-3978-4785-bf44-bcb371377400
   Vérifier la création de la fiche et la répartition des tâches dans le Kanban.
 
 ### En cours
 
+_(aucune)_
+
 ### Review
 
-- [?] Valider le client iPad | type:feature | priority:high
+- [?] Valider le client iPad | type:feature | priority:high | id:760c5201-baf6-493d-84ca-9eb5830e85f6
   Code Objective-C présent ; compilation et décodage sur appareil à confirmer.
-- [?] Valider l'écran étendu Windows | type:feature | priority:high
+- [?] Valider l'écran étendu Windows | type:feature | priority:high | id:cca63196-df3a-4de8-a466-ac59fac01b41
   VDD et ffmpeg décrits dans le README ; tester affichage, rotation et veille.
-- [?] Valider l'écran virtuel Debian | type:feature | priority:high
-  Code Mutter/PipeWire/GStreamer présent ; vérifier sur GNOME Wayland.
-- [?] Recetter les modes de saisie | type:feature | priority:high
+- [?] Recetter les modes de saisie | type:feature | priority:high | id:ca7e1338-7cb2-4f6b-810f-07cd3c010cf3
   Gestes et repli souris documentés ; tester le tactile, la pression et le clavier.
-- [?] Recetter la Touch Bar | type:feature | priority:medium
+- [?] Recetter la Touch Bar | type:feature | priority:medium | id:27a2a835-a26c-483c-9e80-c2c936231564
   Raccourcis Debian, y compris terminal, présents dans la source ; tester les contextes des deux hôtes.
-- [?] Vérifier le mode multi-PC | type:feature | priority:medium
+- [?] Vérifier le mode multi-PC | type:feature | priority:medium | id:26ade479-ddab-4823-b02f-ff1b2add1222
   Jusqu'à quatre PC selon README ; tester bascule, veille et reconnexion.
-- [?] Recetter les transferts et le presse-papiers | type:feature | priority:medium
+- [?] Recetter les transferts et le presse-papiers | type:feature | priority:medium | id:3dc7933a-5381-464e-9b24-1be04eaf3409
   Fonctions documentées ; vérifier texte, images, dossiers et erreurs de transfert.
-- [?] Recetter webcam, micro et son | type:feature | priority:medium
+- [?] Recetter webcam, micro et son | type:feature | priority:medium | id:aabef9c8-7bf5-487c-8c10-1128750d885b
   Intégration Windows documentée ; tester les applications compatibles et les limites.
-- [?] Valider le tableau de bord | type:feature | priority:medium
+- [?] Valider le tableau de bord | type:feature | priority:medium | id:9085880e-91a7-45a4-acdb-1deb218f9a72
   Indicateurs et contrôles HTTP/ping décrits ; vérifier exactitude et erreurs réseau.
-- [?] Valider l'appairage et TLS | type:infra | priority:high
+- [?] Valider l'appairage et TLS | type:infra | priority:high | id:233722f1-57cf-41b2-847e-c3484f5bce42
   Tests de handshake prévus dans le workflow ; vérifier leur résultat et les refus d'accès.
-- [?] Valider la migration MirrorPad | type:bug | priority:high
+- [?] Valider la migration MirrorPad | type:bug | priority:high | id:868a5841-851e-4532-99f8-8702ea457f40
   Migration automatique annoncée ; tester la conservation des réglages et appairages.
-- [?] Vérifier installation et mise à jour Windows | type:infra | priority:high
+- [?] Vérifier installation et mise à jour Windows | type:infra | priority:high | id:825d7b37-80a3-40ec-8e36-6fd5e6403b4c
   NSIS et tests de restauration référencés ; vérifier installation et rollback réels.
-- [?] Vérifier installation et mise à jour Debian | type:infra | priority:high
+- [?] Vérifier installation et mise à jour Debian | type:infra | priority:high | id:3c349c26-40a1-476d-920b-38ebeb65a245
   Paquet et polkit documentés ; tester installation, migration et désactivation des mises à jour.
-- [?] Vérifier la publication automatisée | type:infra | priority:high
+- [?] Vérifier la publication automatisée | type:infra | priority:high | id:0947f79c-277b-44c3-a92e-63abdecbbd6a
   Workflow présent ; contrôler les résultats CI, le runner SRVHOME et les artefacts.
 
 ### Terminé
 
-- [x] Identifier les sources du projet | type:documentation | priority:medium
+- [x] Identifier les sources du projet | type:documentation | priority:medium | id:8e09112e-e8f7-4dbd-b3f5-865263c9826b
   README, sources iPad/Debian et workflow consultés sur main ; commit de référence consigné.
-- [x] Initialiser le cahier des charges et le Kanban bOS | type:documentation | priority:medium
+- [x] Initialiser le cahier des charges et le Kanban bOS | type:documentation | priority:medium | id:6a3d3337-b4d6-4a05-8b0f-e448039c090c
   Fiche structurée avec périmètre, preuves, limites, recette et tâches ; import non encore vérifié.
+- [x] Valider l'écran virtuel Debian | type:feature | priority:high | id:82117487-2bed-4872-8178-b26188a454ac
+  Code Mutter/PipeWire/GStreamer présent ; vérifier sur GNOME Wayland.
 <!-- bos:tasks:end -->
