@@ -3,7 +3,7 @@ bos: project/v1
 id: "677d2387-25f9-434c-93c8-9ebb48b4c3a5"
 title: "bSideDesk"
 status: "review"
-exported_at: 2026-11-18T12:58:05.545Z
+exported_at: 2026-11-18T12:58:23.791Z
 ---
 
 <!-- bos:instructions:start
@@ -158,8 +158,6 @@ _(aucune)_
 
 - [?] Valider le client iPad | type:feature | priority:high | id:760c5201-baf6-493d-84ca-9eb5830e85f6
   Code Objective-C présent ; compilation et décodage sur appareil à confirmer.
-- [?] Valider l'écran étendu Windows | type:feature | priority:high | id:cca63196-df3a-4de8-a466-ac59fac01b41
-  VDD et ffmpeg décrits dans le README ; tester affichage, rotation et veille.
 - [?] Recetter les modes de saisie | type:feature | priority:high | id:ca7e1338-7cb2-4f6b-810f-07cd3c010cf3
   Gestes et repli souris documentés ; tester le tactile, la pression et le clavier.
 - [?] Recetter la Touch Bar | type:feature | priority:medium | id:27a2a835-a26c-483c-9e80-c2c936231564
@@ -191,4 +189,6 @@ _(aucune)_
   Fiche structurée avec périmètre, preuves, limites, recette et tâches ; import non encore vérifié.
 - [x] Valider l'écran virtuel Debian | type:feature | priority:high | id:82117487-2bed-4872-8178-b26188a454ac
   Code Mutter/PipeWire/GStreamer présent ; vérifier sur GNOME Wayland.
+- [x] Valider l'écran étendu Windows | type:feature | priority:high | id:cca63196-df3a-4de8-a466-ac59fac01b41
+  VDD et ffmpeg décrits dans le README ; tester affichage, rotation et veille.
 <!-- bos:tasks:end -->
