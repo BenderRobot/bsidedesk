@@ -3,7 +3,7 @@ bos: project/v1
 id: "677d2387-25f9-434c-93c8-9ebb48b4c3a5"
 title: "bSideDesk"
 status: "review"
-exported_at: 2026-11-18T12:58:23.791Z
+exported_at: 2026-11-18T12:58:33.850Z
 ---
 
 <!-- bos:instructions:start
@@ -162,8 +162,6 @@ _(aucune)_
   Gestes et repli souris documentés ; tester le tactile, la pression et le clavier.
 - [?] Recetter la Touch Bar | type:feature | priority:medium | id:27a2a835-a26c-483c-9e80-c2c936231564
   Raccourcis Debian, y compris terminal, présents dans la source ; tester les contextes des deux hôtes.
-- [?] Vérifier le mode multi-PC | type:feature | priority:medium | id:26ade479-ddab-4823-b02f-ff1b2add1222
-  Jusqu'à quatre PC selon README ; tester bascule, veille et reconnexion.
 - [?] Recetter les transferts et le presse-papiers | type:feature | priority:medium | id:3dc7933a-5381-464e-9b24-1be04eaf3409
   Fonctions documentées ; vérifier texte, images, dossiers et erreurs de transfert.
 - [?] Recetter webcam, micro et son | type:feature | priority:medium | id:aabef9c8-7bf5-487c-8c10-1128750d885b
@@ -191,4 +189,6 @@ _(aucune)_
   Code Mutter/PipeWire/GStreamer présent ; vérifier sur GNOME Wayland.
 - [x] Valider l'écran étendu Windows | type:feature | priority:high | id:cca63196-df3a-4de8-a466-ac59fac01b41
   VDD et ffmpeg décrits dans le README ; tester affichage, rotation et veille.
+- [x] Vérifier le mode multi-PC | type:feature | priority:medium | id:26ade479-ddab-4823-b02f-ff1b2add1222
+  Jusqu'à quatre PC selon README ; tester bascule, veille et reconnexion.
 <!-- bos:tasks:end -->
